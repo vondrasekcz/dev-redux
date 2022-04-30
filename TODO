@@ -1,0 +1,6 @@
+ - mutation - sideEffects - on completed, on error
+ - queries - sideEffects
+ - cache manipulation
+ - cache setting - no cache, ...
+ - auth - tokens, refresh, login
+ - try thunk
