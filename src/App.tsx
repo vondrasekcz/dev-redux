@@ -1,16 +1,17 @@
 import { Provider as StoreProvider, } from 'react-redux';
-import BasicCounter from './components/BasicCounter';
-import Dogs from './components/Dogs';
+import { BrowserRouter } from "react-router-dom";
 
+import MainModule from './modules/MainModule';
 import { store, } from './redux/store';
 
 
 // https://redux-toolkit.js.org/usage/usage-guide
-// https://www.youtube.com/watch?v=9zySeP5vH9c&t=1s
+// https://www.youtube.com/watch?v=9zySeP5vH9c
 const App = () => (
   <StoreProvider store={store}>
-    <BasicCounter />
-    <Dogs />
+    <BrowserRouter>
+      <MainModule />
+    </BrowserRouter>
   </StoreProvider>
 );
 

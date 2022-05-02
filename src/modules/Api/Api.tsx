@@ -41,7 +41,7 @@ const FetchDogs = ({
 };
 
 
-const Dogs = () => {
+const Api = () => {
   const [ numBreeds, setNumBreeds, ] = useState<number>(10);
 
   const handleNumBreeds: ChangeEventHandler<HTMLSelectElement> = (e) => {
@@ -71,4 +71,4 @@ const Dogs = () => {
 };
 
 
-export default Dogs;
+export default Api;
