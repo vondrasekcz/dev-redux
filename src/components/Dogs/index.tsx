@@ -1,5 +1,5 @@
 import { useState, ChangeEventHandler, } from 'react';
-import { useFetchBreadsQuery, } from '../../redux/dogs/dogApiSlice';
+import { useFetchBreadsQuery, } from '../../redux/api/apiSlice';
 
 
 interface FetchDogsProps {

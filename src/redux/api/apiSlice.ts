@@ -1,9 +1,4 @@
-import { createSlice, PayloadAction, } from "@reduxjs/toolkit";
 import { createApi, fetchBaseQuery, } from "@reduxjs/toolkit/query/react";
-
-
-const API_URL = 'https://api.thedogapi.com/v1';
-const API_KEY = '29f3ba6a-5806-4d26-8913-4f242b3485e4'
 
 
 interface Bread {
@@ -16,11 +11,11 @@ interface Bread {
 
 
 export const apiSlice =  createApi({
-  reducerPath: 'apiDogs',
+  reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: API_URL,
+    baseUrl: import.meta.env.VITE_API,
     prepareHeaders: (headers) => {
-      headers.set('x-api-key', API_KEY);
+      headers.set('x-api-key', import.meta.env.VITE_API_KEY);
       return headers;
     }, 
   }),

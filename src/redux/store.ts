@@ -1,7 +1,7 @@
 import { configureStore, } from '@reduxjs/toolkit'
 
 import counterReducer from './counter/counterSlice';
-import { apiSlice, } from './dogs/dogApiSlice';
+import { apiSlice, } from './api/apiSlice';
 
 
 // configureStore
