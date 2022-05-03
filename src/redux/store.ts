@@ -1,6 +1,7 @@
 import { configureStore, } from '@reduxjs/toolkit'
 
 import counterReducer from './counter/counterSlice';
+import asyncThunkReducer from './asyncThunk/asyncThunkSlice';
 import { apiSlice, } from './api/apiSlice';
 
 
@@ -10,6 +11,7 @@ export const store = configureStore({
   // automatically call combine reducers
   reducer: {
     counter: counterReducer,
+    asyncThunk: asyncThunkReducer, 
     [apiSlice.reducerPath]: apiSlice.reducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),

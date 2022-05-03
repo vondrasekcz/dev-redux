@@ -11,6 +11,10 @@ const links = [
     name: 'Counters',
   },
   {
+    to: 'async-thunk',
+    name: 'Async Thunk',
+  },
+  {
     to: '/api',
     name: 'API',
   },

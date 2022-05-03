@@ -1,6 +1,7 @@
 import { Routes, Route, } from "react-router-dom";
 import Layout from "../../components/Layout.tsx";
 import Api from "../Api/Api";
+import AsyncThunk from "../AsyncThunk/AsyncThunk";
 import Counters from "../Counters/Counters";
 import Home from "../Home/Home";
 import Products from "../Products";
@@ -15,6 +16,7 @@ const MainModule = () => {
         <Route index element={<Home />} />
         <Route path="*" element={<Home />} />
         <Route path="counters" element={<Counters />} />
+        <Route path="async-thunk" element={<AsyncThunk />} />
         <Route path="api" element={<Api />} />
         <Route path="products" element={<Products /> }>
           <Route path="new" element={<ProductNew />} />
